@@ -19,7 +19,4 @@ app.use("/api/posts", postsRoute);
 const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);
 
-const cors = require("cors");
-app.use(cors());
-
 app.listen(3000, () => console.log("Server running on port 3000"));
