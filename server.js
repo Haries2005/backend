@@ -6,9 +6,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MONGO_URL = "mongodb+srv://Hari:Hari2005@cloud.yodneiv.mongodb.net/kec";
+const MONGO_URL = ;
 
-mongoose.connect(MONGO_URL)
+mongoose.connect(MONGO_URL)"mongodb+srv://Hari:Hari2005@cloud.yodneiv.mongodb.net/kec"
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
