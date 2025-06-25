@@ -19,7 +19,7 @@ router.post("/signup", async (req, res) => {
     const token = jwt.sign({ id: user._id }, JWT_SECRET);
     res.status(201).json({ token, user: { id: user._id, username, email } });
   } catch (err) {
-    console.error(\"Signup error:\", err);
+    console.error("Signup error:", err);
     res.status(500).json({ error: \"Signup failed at server\" });
   }
 });
